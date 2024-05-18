@@ -25,7 +25,8 @@ public class MainManager : MonoBehaviour
     {
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);
-        topScore.text = $"HighScore : {DataManager.Instance.playerName} {DataManager.Instance.highScore}";
+        topScore.text = $"HighScore : {DataManager.Instance.playerName}   {DataManager.Instance.highScore}";
+        ScoreText.text = $"{DataManager.Instance.playerName} Score : {m_Points}";
         int[] pointCountArray = new [] {1,1,2,2,5,5};
         for (int i = 0; i < LineCount; ++i)
         {
